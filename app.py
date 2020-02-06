@@ -15,7 +15,7 @@ def get_html_from_google():
     content = requests.get("https://www.google.com").content
     soup = bs(content)
     links = soup.find_all('a')
-    return str(links)
+    return "This is a list of links on Google's homepage:\n" + str(links)
 
 
 @app.route("/random-cheese")
