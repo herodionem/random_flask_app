@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    a = 1 + 1
+    a = 1 + 2
     return f"Hello world = {a}"
 
 @app.route("/get-html-from-google")
